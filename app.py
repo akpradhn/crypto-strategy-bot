@@ -20,6 +20,7 @@ with st.sidebar:
         "SUI", "RUNE", "XTZ", "AAVE", "KAS", "STX", "AR", "USDT", "USDC", "DAI",
         "FRAX", "TUSD", "CRV", "DYDX", "GRT", "ENS", "FTM", "ZEC", "SNX", "CRO"
     ])
+
     # interval = st.selectbox("⏱️ Interval", ["1m", "15m", "1h"])
     # look_back = st.number_input("📘 Look Back (minutes)", min_value=1, value=180)
     trade_margin = st.number_input("📊 Trade Margin (%)", min_value=0.1, value=1.0)

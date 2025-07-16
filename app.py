@@ -4,7 +4,10 @@ import locale
 
 st.set_page_config(page_title="Drifter: Strategy Recommendation Bot", layout="wide")
 
-locale.setlocale(locale.LC_ALL, 'en_IE.UTF-8')  # European style commas
+try:
+    locale.setlocale(locale.LC_ALL, 'en_IE.UTF-8')  # Use European style commas
+except locale.Error:
+    locale.setlocale(locale.LC_ALL, '')  # Fallback to system default
 
 # Sidebar Inputs
 with st.sidebar:

@@ -10,7 +10,13 @@ locale.setlocale(locale.LC_ALL, 'en_IE.UTF-8')  # European style commas
 with st.sidebar:
     st.header("🔐 Enter API Request Parameters")
     api_key = st.text_input("🔐 API Key", type="password")  # Hardcoded for now
-    coin = st.selectbox("🌍 Coin", ["BTC", "ETH", "SOL"])
+    coin = st.selectbox("🌍 Coin", [
+        "BTC", "ETH", "SOL", "BNB", "XRP", "ADA", "DOGE", "AVAX", "TON", "DOT",
+        "SHIB", "TRX", "LINK", "MATIC", "NEAR", "LTC", "BCH", "UNI", "ICP", "ATOM",
+        "ETC", "FIL", "INJ", "APT", "HBAR", "VET", "MKR", "LDO", "EGLD", "RETH",
+        "SUI", "RUNE", "XTZ", "AAVE", "KAS", "STX", "AR", "USDT", "USDC", "DAI",
+        "FRAX", "TUSD", "CRV", "DYDX", "GRT", "ENS", "FTM", "ZEC", "SNX", "CRO"
+    ])
     # interval = st.selectbox("⏱️ Interval", ["1m", "15m", "1h"])
     # look_back = st.number_input("📘 Look Back (minutes)", min_value=1, value=180)
     trade_margin = st.number_input("📊 Trade Margin (%)", min_value=0.1, value=1.0)
